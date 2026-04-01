@@ -76,6 +76,29 @@ npm run build
 npm run preview
 ```
 
+## 掛載到線上網頁（部署）
+
+### Vercel（推薦）
+1. 推送專案到 GitHub。
+2. 到 Vercel 匯入該 repo。
+3. Framework 選 `Vite`（已提供 `vercel.json`）。
+4. Build Command：`npm run build`
+5. Output Directory：`dist`
+6. Deploy 後即可拿到公開網址。
+
+### Netlify
+1. 推送專案到 GitHub。
+2. 到 Netlify 建立 `New site from Git`。
+3. Build command：`npm run build`
+4. Publish directory：`dist`
+5. 已提供 `netlify.toml`，含 SPA fallback（`/* -> /index.html`）。
+
+### 本機先驗證 production build
+```bash
+npm run build
+npm run preview
+```
+
 ## 使用流程
 1. 批次上傳圖片或拖曳圖片到畫布區。
 2. 在上方縮圖列選擇要編輯的圖片。
