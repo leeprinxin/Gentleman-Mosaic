@@ -8,7 +8,6 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"),
         standalone: resolve(__dirname, "standalone.html"),
       },
     },
