@@ -4,12 +4,8 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/standalone.html"
-    },
-    {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/standalone.html"
     }
   ]
 }
