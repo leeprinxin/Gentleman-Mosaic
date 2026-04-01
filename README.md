@@ -4,6 +4,9 @@
 
 ![紳士打碼 Logo](./logo-Photoroom.png)
 
+## 線上 Demo
+- https://gentleman-mosaic.vercel.app/
+
 ## 介面預覽
 ![UI Demo](./UI.PNG)
 
