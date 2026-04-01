@@ -1,5 +1,25 @@
 ﻿# Change Log
 
+## [2.1.0] - 2026-04-01
+
+### Added
+- About feature upgraded to a modal dialog with multiple close methods (`X`, backdrop click, and `Esc`).
+- UI settings persistence API endpoints (`GET/POST /ui-settings`) for language and theme.
+- Selection polarity toggle support (`normal` / `inverse`).
+- Selection operation toggle support (`add` / `subtract`).
+- Keyboard shortcuts and interaction hints: `Ctrl+Z`, `Ctrl+Shift+Z`, `Ctrl+Y`, `Ctrl+X`, and `Space + LMB drag`.
+
+### Changed
+- Updated project version metadata to `v2.1.0` across UI badge, package manifest, and documentation.
+- Moved language/theme controls into a compact top-right settings icon panel.
+- Improved viewport navigation to support drag-to-pan image viewing.
+- Mosaic algorithm adjusted to better align with [PEKO-STEP](https://www.peko-step.com/tool/imageeditor/index.php?lang=zhtw&type=19)-style pixelation behavior.
+- Reworked dark theme palette with a softer checkerboard background in the central image viewport.
+
+### Fixed
+- Improved INI parsing compatibility by handling UTF-8 BOM (`utf-8-sig`) in `launch.ini` reads.
+- Fixed history restore so pending selection overlays are correctly recovered during Undo/Redo.
+
 ## [2.0.0] - 2026-03-31
 
 ### Added

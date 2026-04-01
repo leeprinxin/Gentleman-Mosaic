@@ -1,4 +1,4 @@
-﻿# Gentleman Mosaic v2.0.0
+﻿# Gentleman Mosaic v2.1.0
 
 ![Gentleman Mosaic Logo](./logo-Photoroom.png)
 
@@ -6,8 +6,20 @@
 ![UI Demo](./UI.PNG)
 
 ## Release Info
-- Version: `v2.0.0`
-- Updated on: `2026-03-31`
+- Version: `v2.1.0`
+- Updated on: `2026-04-01`
+
+### What's New in v2.1.0
+- Settings moved into a top-right icon panel (gear icon)
+- Added About icon and converted About content into a modal dialog (`X` / backdrop / `Esc` to close)
+- Language and Dark/Light preferences are now saved to `launch.ini` and restored on startup
+- Added selection polarity toggle: Normal / Inverse
+- Added selection operation toggle: Add / Subtract
+- Added/clarified shortcuts: `Ctrl+Z` / `Ctrl+Shift+Z` / `Ctrl+Y` / `Ctrl+X`, and `Space + LMB drag`
+- History restore fix: Undo/Redo now correctly restores pending selection overlays
+- Mosaic algorithm tuned to better match [PEKO-STEP](https://www.peko-step.com/tool/imageeditor/index.php?lang=zhtw&type=19) style pixelation
+- Improved image navigation with drag-to-pan viewport behavior
+- Refined dark theme palette, especially a softer checker background in the center image viewport
 
 ### What's New in v2.0.0
 - Batch image upload and image switching (up to 30 files)

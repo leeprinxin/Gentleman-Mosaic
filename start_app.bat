@@ -17,6 +17,8 @@ set "HOST=127.0.0.1"
 set "PORT=7200"
 set "RELOAD=1"
 set "AUTO_INSTALL_DEPS=1"
+set "UI_LANG=zh"
+set "UI_THEME=light"
 
 if exist "%CFG%" (
   for /f "usebackq tokens=1,* delims==" %%A in ("%CFG%") do (
@@ -36,6 +38,8 @@ if exist "%CFG%" (
         if /I "!K!"=="port" set "PORT=!V!"
         if /I "!K!"=="reload" set "RELOAD=!V!"
         if /I "!K!"=="auto_install_deps" set "AUTO_INSTALL_DEPS=!V!"
+        if /I "!K!"=="language" set "UI_LANG=!V!"
+        if /I "!K!"=="theme" set "UI_THEME=!V!"
       )
     )
   )
@@ -45,7 +49,9 @@ if exist "%CFG%" (
   echo window.APP_CONFIG = {
   echo   backend_host: "!HOST!",
   echo   backend_port: !PORT!,
-  echo   backend_url: "http://!HOST!:!PORT!"
+  echo   backend_url: "http://!HOST!:!PORT!",
+  echo   ui_lang: "!UI_LANG!",
+  echo   ui_theme: "!UI_THEME!"
   echo };
 ) > runtime-config.js
 
@@ -136,6 +142,3 @@ if exist "standalone.html" (
 
 endlocal
 exit /b 0
-
-
-

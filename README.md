@@ -1,6 +1,6 @@
 ﻿[English Documentation](./README.en.md)
 
-# 紳士打碼 v2.0.0
+# 紳士打碼 v2.1.0
 
 ![紳士打碼 Logo](./logo-Photoroom.png)
 
@@ -8,8 +8,20 @@
 ![UI Demo](./UI.PNG)
 
 ## 更新資訊
-- 版本：`v2.0.0`
-- 更新日期：`2026-03-31`
+- 版本：`v2.1.0`
+- 更新日期：`2026-04-01`
+
+### v2.1.0 新功能重點
+- 設定面板改為右上角 icon（齒輪）
+- 新增關於我 icon，並改為彈跳視窗（可按 `X`、遮罩、`Esc` 關閉）
+- 語言與 Dark/Light 設定可寫入 `launch.ini` 並於下次啟動自動套用
+- 新增選取方向切換：正向 / 反向
+- 新增選取操作切換：加選 / 減選
+- 新增快捷鍵：`Ctrl+Z` / `Ctrl+Shift+Z` / `Ctrl+Y` / `Ctrl+X`、`Space+左鍵拖移`
+- 歷史回溯修正：Undo/Redo 可正確回復當次提示區域（待處理區域）
+- 馬賽克演算法修正，顆粒效果對齊 [PEKO-STEP](https://www.peko-step.com/tool/imageeditor/index.php?lang=zhtw&type=19) 風格
+- 圖片檢視優化：支援拖移平移檢視
+- 深色模式配色優化，特別是中間圖片區塊網底更柔和
 
 ### v2.0.0 新功能重點
 - 批次上傳與圖片切換（最多 30 張）
